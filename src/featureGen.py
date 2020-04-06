@@ -335,7 +335,7 @@ def buildAndTraining(article, blockBoundaryIndex, insnStartingIndices, indexToCu
         # rw_embedding_list = []
         # for each random walk, we learn an embedding for the random walk and for all the blocks in the walk
         data_index = 0
-        num_steps = 10001
+        num_steps = 6001
 
         average_loss = 0
         for step in range(num_steps):

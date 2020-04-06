@@ -160,7 +160,7 @@ def feature_vec_file_gen(feature_file, block_embeddings):
 
 
 def copyEverythingOver(src_dir, dst_dir):
-    ground_truth = 'addrMapping'
+    # ground_truth = 'addrMapping'
     node_features = 'features'
     cfg_edgelist = 'edgelist_merged_tadw'
     #func_edgelist = 'func_edgelist'
@@ -168,7 +168,7 @@ def copyEverythingOver(src_dir, dst_dir):
     nodeInfo = 'nodeIndexToCode'
 
     #copyfile('/home/yueduan/yueduan/groundTruthCollection/output/' + ground_truth, dst_dir + ground_truth)
-    copyfile(src_dir + ground_truth, dst_dir + ground_truth)
+    # copyfile(src_dir + ground_truth, dst_dir + ground_truth)
     copyfile(src_dir + node_features, dst_dir + node_features)
     copyfile(src_dir + cfg_edgelist, dst_dir + 'edgelist')
     #copyfile(src_dir + func_edgelist, dst_dir + func_edgelist)
@@ -176,11 +176,11 @@ def copyEverythingOver(src_dir, dst_dir):
     copyfile(src_dir + nodeInfo, dst_dir + nodeInfo)
 
     #Yue: use feature as embedding
-    copyfile(src_dir + node_features, 'vec_all')
+    # copyfile(src_dir + node_features, 'vec_all')
 
 def main():
     # example:
-    # python3 src/deepbindiff.py --input1 input/ls_6.4 --input2 input/ls_8.30 --old_dir input/coreutils-6.4/ --new_dir input/coreutils-8.30/ --outputDir output/
+    # python3 src/deepbindiff.py --input1 input/ls_6.4 --input2 input/ls_8.30 --outputDir output/
 
     parser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter, conflict_handler='resolve')
     parser.add_argument('--input1', required=True, help='Input bin file 1')
