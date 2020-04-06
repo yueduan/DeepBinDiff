@@ -32,15 +32,19 @@ python3 src/deepbindiff.py --input1 /home/DeepBinDiff/experiment_data/coreutils/
 
 ### Misc
 1. IDA Pro or Angr?
+
 We have both the IDA pro version and the angr version. IDA pro is used in order to directly compare with BinDiff, which uses IDA pro as well. The code here uses Angr.
 
 2. Results?
+
 Results are printed as "matched pairs" once the diffing is done. Each pair represents a matched pair of basic blocks in the two binaries. The numbers are the basic block indices, which can be found in output/nodeIndexToCode file.
 
 3. CPU or GPU?
+
 The current version is using CPU only. 
 
 4. NLP pre-training?
+
 The current version uses a on-the-fly training process, meaning we only use the two input binaries for NLP training. Therefore, we don't need any pre-trained model. This will eliminates the OOV problem but will slow down the process a bit.
 
 
@@ -48,6 +52,5 @@ The current version uses a on-the-fly training process, meaning we only use the 
 ### Paper
 Please consider citing our paper if you find the code useful.
 
-```
+
 Yue Duan, Xuezixiang Li, Jinghan Wang, and Heng Yin, "DeepBinDiff: Learning Program-Wide Code Representations for Binary Diffing", NDSS'2020
-```
