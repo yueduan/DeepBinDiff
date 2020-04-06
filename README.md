@@ -2,6 +2,12 @@
 
 This is the official repository for DeepBinDiff, which is a fine-grained binary diffing tool for x86 binaries. We will actively update it.
 
+### Paper
+Please consider citing our paper if you find the code useful.
+
+
+Yue Duan, Xuezixiang Li, Jinghan Wang, and Heng Yin, "DeepBinDiff: Learning Program-Wide Code Representations for Binary Diffing", NDSS'2020
+
 
 ### Requirements:
 
@@ -49,8 +55,3 @@ The current version uses a on-the-fly training process, meaning we only use the 
 
 
 
-### Paper
-Please consider citing our paper if you find the code useful.
-
-
-Yue Duan, Xuezixiang Li, Jinghan Wang, and Heng Yin, "DeepBinDiff: Learning Program-Wide Code Representations for Binary Diffing", NDSS'2020
