@@ -43,7 +43,7 @@ We have both the IDA pro version and the angr version. IDA pro is used in order 
 
 2. Results?
 
-Results are printed as "matched pairs" once the diffing is done. Each pair represents a matched pair of basic blocks in the two binaries. The numbers are the basic block indices, which can be found in output/nodeIndexToCode file.
+Results are printed directly on the screen as "matched pairs" once the diffing is done. Each pair represents a matched pair of basic blocks in the two binaries. The numbers are the basic block indices, which can be found in output/nodeIndexToCode file.
 
 3. CPU or GPU?
 
@@ -51,7 +51,7 @@ The current version is using CPU only.
 
 4. NLP pre-training?
 
-The current version uses an on-the-fly training process, meaning we only use the two input binaries for NLP training. Therefore, we don't need any pre-trained model. This will eliminates the OOV problem but will slow down the process a bit.
+The current version uses an on-the-fly training process, meaning we only use the two input binaries for NLP training. Therefore, we don't need any pre-trained model. This will eliminate the OOV problem but will slow down the process a bit.
 
 
 
