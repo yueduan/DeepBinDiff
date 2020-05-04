@@ -52,6 +52,3 @@ The current version is using CPU only.
 4. NLP pre-training?
 
 The current version uses an on-the-fly training process, meaning we only use the two input binaries for NLP training. Therefore, we don't need any pre-trained model. This will eliminate the OOV problem but will slow down the process a bit.
-
-
-

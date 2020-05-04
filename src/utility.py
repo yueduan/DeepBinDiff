@@ -201,7 +201,7 @@ def matching(node_in_bin1, ebd_dic, sim_result, node_map, toBeMergedBlocks):
 
     mapping = linearAssignment(cost_array)
     bb_matching_pair = []
-    # check if the function is inserted or deleted
+    # check if the it is inserted or deleted
     # only put the matched pairs into 'bb_matching_pair'
     for k in range(maxNumber):
         match_bb1 = -1
@@ -220,11 +220,10 @@ def matching(node_in_bin1, ebd_dic, sim_result, node_map, toBeMergedBlocks):
         if match_bb1 != -1 and match_bb2 != -1:
             bb_matching_pair.append([match_bb1, match_bb2])
 
-    for pair in bb_matching_pair:
-        pair = [non_matched_to_global_dict1[pair[0]], non_matched_to_global_dict2[pair[1]]]
-        matched_pairs.append(pair)
-    
-    return matched_pairs
+    inserted = []
+    deleted = []
+
+    return matched_pairs, inserted, deleted
 
 
 

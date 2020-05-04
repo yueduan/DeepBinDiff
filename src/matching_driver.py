@@ -61,10 +61,18 @@ def pre_matching(bin1_name, bin2_name, toBeMergedBlocks={}):
     sim_result = utility.similarity_gpu(bin1_mat, bin2_mat)
     
     print("Perform matching...")
-    matched_pairs = utility.matching(node_in_bin1, ebd_dic, sim_result, node_map, toBeMergedBlocks)
+    matched_pairs, inserted, deleted = utility.matching(node_in_bin1, ebd_dic, sim_result, node_map, toBeMergedBlocks)
 
     print("matched pairs: ")
     print(matched_pairs)
+
+    # print("Inserted blocks: ")
+    # print(inserted)
+
+    # print("Deleted blocks: ")
+    # print(deleted)
+
+   
 
 
 # if __name__ == '__main__' :
