@@ -5,11 +5,7 @@ This is the official repository for DeepBinDiff, which is a fine-grained binary 
 ### Paper
 Please consider citing our paper if you find the code useful.
 
-
-@article{duandeepbindiff,
-  title={DEEPBINDIFF: Learning Program-Wide Code Representations for Binary Diffing},
-  author={Duan, Yue and Li, Xuezixiang and Wang, Jinghan and Yin, Heng}
-}
+Yue Duan, Xuezixiang Li, Jinghan Wang, and Heng Yin, "DeepBinDiff: Learning Program-Wide Code Representations for Binary Diffing", NDSS'2020
 
 
 ### Requirements:
