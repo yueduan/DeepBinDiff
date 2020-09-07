@@ -110,7 +110,7 @@ def cal_block_embeddings(blockIdxToTokens, blockIdxToOpcodeNum, blockIdxToOpcode
 
                 tokenEmbedding = tokenEmbeddings[tokenid]
 
-                if tokenid in opcode_idx_list:
+                if tokenid in opcode_idx_list and token in opcodeCounts:
                     # here we multiple the embedding with its TF-IDF weight if the token is an opcode
                     tf_weight = opcodeCounts[token] / opcodeNum
                     x = totalBlockNum / insToBlockCounts[token]
