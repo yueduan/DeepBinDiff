@@ -1,0 +1,6 @@
+tensorflow==1.15
+gensim==3.8.3
+angr
+networkx
+lapjv
+scikit-learn
